@@ -58,6 +58,13 @@ public class CustomListTest {
 
     }
 
+    @Test
+    public void CountCityTest(){
+        list=MockCityList();
+        City city = new City("Regina","Saskatchewan");
+        list.addCity(city);
+        assertEquals(1, list.getCount());
+    }
 
 
 }
